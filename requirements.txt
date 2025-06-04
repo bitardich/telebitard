@@ -1,2 +1,2 @@
 telethon
-flet
+flet>=0.27.0
