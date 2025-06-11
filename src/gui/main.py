@@ -16,10 +16,6 @@ class ProgramInterface:
         self.page.padding = 10
         self.page.update()
 
-        self.picker = ft.FilePicker(on_result=self.handler_file_picker)
-        self.page.overlay.append(self.picker)
-        self.page.update()
-
     def ui(self):
 
         # контент табов
@@ -73,3 +69,5 @@ class ProgramInterface:
             ft.Column(controls=[self.tabs], expand=True)
         )
         self.page.update()
+
+        #ROMA PRIVET
