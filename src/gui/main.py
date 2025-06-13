@@ -26,11 +26,12 @@ class ProgramInterface:
                     controls=[
                         ft.ElevatedButton(
                             text="Добавить",
-                            icon=ft.icons.ADD
+                            icon=ft.icons.ADD,
                         ),
                         ft.ElevatedButton(
                             text="Удалить",
-                            icon=ft.icons.DELETE
+                            icon=ft.icons.DELETE,
+                            disabled=True
                         )
                     ],
                 alignment=ft.MainAxisAlignment.START,
@@ -69,5 +70,3 @@ class ProgramInterface:
             ft.Column(controls=[self.tabs], expand=True)
         )
         self.page.update()
-
-        #ROMA PRIVET
